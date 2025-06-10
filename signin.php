@@ -24,7 +24,7 @@
                     $row = mysqli_fetch_assoc($res);
 
                     if (password_verify($_POST['password'], $row['password'])){
-                        //imposto la sessione
+       
                         $_SESSION['_medium_email'] = $row['email'];
                         $_SESSION['_medium_user_id'] = $row['id'];
                         header("Location: index.php");
@@ -45,7 +45,7 @@
                 $error = array();
                 $conn = mysqli_connect($dbconfig['host'], $dbconfig['user'], $dbconfig['password'], $dbconfig['name']) or die(mysqli_error($conn));
 
-                #EMAIL
+       
                 if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 $error["email"] = "Email non valida";
                 }else {
@@ -56,12 +56,10 @@
                     }
                 }
 
-                # PASSWORD
                 if (strlen($_POST["password"]) < 8) {
                 $error["email"] = "Caratteri password insufficienti";
                 } 
 
-                # REGISTRAZIONE NEL DATABASE
         if (count($error) == 0) {
             $name = mysqli_real_escape_string($conn, $_POST['name']);
             $surname = mysqli_real_escape_string($conn, $_POST['surname']);
