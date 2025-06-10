@@ -23,7 +23,6 @@
         $content = mysqli_real_escape_string($conn, $_POST['content']);
         $image = mysqli_real_escape_string($conn, $_POST['img']);
 
-        // ID e Username per sessione, password per controllo
         $query = "INSERT INTO Articles(author, title, subtitle, content, topic, likes, dislikes, image_src) VALUES($userid, '$title', '$subtitle', '$content', '$topic', 0, 0, '$image')";
         $res = mysqli_query($conn, $query) or die(mysqli_error($conn));
     }
