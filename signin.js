@@ -1,4 +1,4 @@
-////GESTIONE DELLA MODALE
+
 function onSignupClick(){
     const modal_signup = document.querySelector("#modal-signup");
     const modal_signin = document.querySelector("#modal-signin");
@@ -25,8 +25,6 @@ function onExitSigninClick(){
     modal_signin.classList.add("hidden");
 }
 
-
-////VALIDAZIONE SIGN UP
 
 function onJsonEmail(json){
     formSignUpStatus["email"] = !json.exists;
@@ -153,12 +151,6 @@ input_email.addEventListener('blur', checkSignUpEmail);
 
 const input_password = document.querySelector("#form-signup .password input");
 input_password.addEventListener('blur', checkSignUpassword);
-
-
-
-
-
-
 
 
 const signin_form = document.forms['signin'];
