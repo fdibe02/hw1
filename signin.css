@@ -1,0 +1,279 @@
+body{
+  background-color: #f9f9eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: "SemiBold600";
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  #start{
+    display: flex;
+    width: 417px;
+    margin-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  header .signup, #main .signup{
+    display: flex;
+    color: white;
+    font-size: 12.5px;
+    background-color: black;
+    width: 105px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  #main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+  }
+
+  #main h1{
+    font-size: 90px;
+    margin-bottom: 35px;
+  }
+
+  #main h3{
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  #main .signup{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0;
+    font-size: 20px; 
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    height: 50px;
+  }
+
+  footer a{
+    margin-left: 15px;
+    margin-top: 7.5px;
+  }
+
+  @media (max-width: 750px) {
+    footer {
+      display: none;
+    }
+
+    header a{
+      display: none;
+    }
+
+    header .signup{
+      display: none;
+    }
+
+    #main .signup{
+      background-color: green;
+    }
+  }
+
+
+  #modal-signup, #modal-signin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #form-signup{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 620px;
+    width:  678px;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  #form-signin{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 450px;
+    width:  678px;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  #form-signup h3, #form-signin h3{
+    margin-top: 15px;
+    font-weight: 0;
+  }
+
+  #form-signin h3{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 0;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nome, .cognome, .password, .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .nome span, .cognome span, .password span, .email span{
+    margin-top: 5px;
+    margin-right: 27.5%;
+    font-size: 15px;
+  }
+
+  .nome span.hidden, .cognome span.hidden, .password span.hidden, .email span.hidden{
+    visibility: hidden;
+  }
+
+  .error{
+    color: red;
+    font-weight: 600;
+  }
+
+  label{
+    margin-bottom: 10px;
+  }
+
+input{
+  width: 50%;
+  height: 35px;
+  border: 0.5px solid black;;
+  border-radius: 5px;
+  background-color: rgb(249, 249, 249);
+  font-size: 15px;
+}
+
+input:hover{
+  border: 1.5px solid black;
+}
+
+input:focus{
+  border: 1.5px solid black;
+  outline: none;
+}
+
+#form-signup a{
+  font-size: 18px;
+  margin-top: 20px;
+  height: 10px;
+}
+
+#form-signin a{
+  font-size: 18px;
+  margin-top: 30px;
+  height: 10px;
+}
+
+#form-signup input[type=submit], #form-signin [type=submit]{
+  display: flex;
+  color: white;
+  height: 45px;
+  width: 140px;
+  font-size: 14px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-top: 15px;
+}  
+
+  #form-signup strong:hover, #form-signin strong:hover{
+    border-bottom: 0.75px solid black;
+    cursor: pointer;
+  }
+
+  .exit{
+    text-align: end;
+    font-size: 30px;
+    width: 96%;
+    height: 30px;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .exit:hover{
+    color: black;
+  }
+
+  #modal-signup.hidden, #modal-signin.hidden{
+    display: none;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .error label, #form-signin p{
+    color: red;
+  }
+
+  #form-signin p{
+    color: red;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+
+
+  
+
+  
+
+
+  
+
+
+

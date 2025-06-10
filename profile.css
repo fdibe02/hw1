@@ -1,0 +1,168 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: black;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17.5px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-top: 2.5px;
+    padding-bottom: 7.5px;
+  }
+
+  #start{
+    display: flex;
+    align-items: center;
+  }
+
+  
+  #logo {
+    font-size: 2rem;
+    font-family: "SemiBold600";
+    font-weight: 800;
+    margin-top: 7px;
+    text-decoration: none;
+    color: black;
+  }
+  
+   input {
+    border-radius: 20px;
+    height: 40px;
+    width: 220px;
+    font-size: 1rem;
+    border: 0px;
+    margin-left: 25px;
+    margin-top: 7.5px;
+    background-color: #f3f3f3; 
+    outline: none;
+
+  }
+
+  #account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    width: 120px;
+    height: 100%;
+    padding: 0;
+  }
+
+  #account img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+    
+  }
+
+  #account a{
+    font-size: 1.1em;
+    cursor: pointer;
+    color: rgb(106, 106, 106);
+    text-decoration: none;
+  }
+
+  #account a:hover{
+    color: black;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 250px;
+    margin-top: 50px;
+  }
+
+  section h2{
+    font-family: "Roboto";
+    font-weight: 500;
+    width: 60vw;
+    font-size: 2.5em;
+    border-bottom: 0.5px solid lightgrey;
+  }
+
+  #user-bar{
+    display: flex;
+    align-items: center;
+  }
+
+  section h3{
+    font-size: 1.5em;
+  }
+
+  #liked-articles{
+    display: flex;
+    font-family: "inter";
+    width: 67.5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(241, 240, 240);
+    border-radius: 6px;
+  }
+
+  .card-space{
+    text-decoration: none;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    width: 260px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .card:hover{
+    border: 1.2px solid rgb(107, 107, 107);
+  }
+
+  .card h5{
+    font-size: 1em;
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Inter", Helvetica;
+    color: black;
+  }
+
+  .card a{
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 90%;
+    font-family: sans-serif;
+    color: #808080;
+    text-decoration: none;
+  }
+
+  .card img{
+    height: 80px;
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  #signout{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    color: black;
+    border: 2px solid rgb(186, 186, 186);
+    background-color: rgb(255, 139, 139);
+  }

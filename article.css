@@ -1,0 +1,103 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: black;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17.5px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-top: 2.5px;
+    padding-bottom: 7.5px;
+  }
+
+  #start{
+    display: flex;
+    align-items: center;
+  }
+
+  
+  #logo {
+    font-size: 2rem;
+    font-family: "SemiBold600";
+    font-weight: 800;
+    margin-top: 7px;
+    text-decoration: none;
+    color: black;
+  }
+  
+   input {
+    border-radius: 20px;
+    height: 40px;
+    width: 220px;
+    font-size: 1rem;
+    border: 0px;
+    margin-left: 25px;
+    margin-top: 7.5px;
+    background-color: #f3f3f3; 
+    outline: none;
+
+  }
+  
+  #account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    width: 120px;
+    height: 100%;
+    padding: 0;
+  }
+
+  #account img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  #account a{
+    font-size: 1.1em;
+    cursor: pointer;
+    color: rgb(106, 106, 106);
+    text-decoration: none;
+  }
+
+  #account a:hover{
+    color: black;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 300px;
+  }
+
+  section img{
+    height: 70vh;
+    width: 60vw;
+    margin-top: 50px;
+  }
+
+  #title{
+    font-size: 2.3em;
+    font-family: "Inter", Helvetica;
+  }
+
+  #subtitle{
+    font-family: "Inter", Helvetica;
+    color: gray;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  #content{
+    margin: 50px 100px;
+    font-family: "Lora", serif;;
+    font-size: 21px;
+  }
